@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadDigitRecognitionModel() {
         digitRecognizer = new Recognizer(this,
-                "file:///android_asset/recognition_model.pb",
-                "file:///android_asset/graph_label_strings.txt");
+                "file:///android_asset/custom_tensorflow_model.pb",
+                "file:///android_asset/label_strings.txt");
     }
 
     public void predictDigit(){
